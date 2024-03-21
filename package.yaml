@@ -17,6 +17,6 @@ dependencies:
   - pip=23.2.1
   - robocorp-truststore=0.8.0
   pypi:
-  - robocorp=1.6.2
-  - robocorp-actions=0.0.9
-
+  - robocorp=2.0.0
+  - robocorp-actions=0.1.0
+  - pydantic=2.6.4

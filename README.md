@@ -1,6 +1,6 @@
 # Example: Python - Marketing Campaign Actions
 
-This example demonstrates how to create Actions for the [Robocorp Action Server](https://github.com/robocorp/robo/tree/master/action_server/docs#readme) to assist with marketing campaigns by querying exclusive products by their category. These Actions can be integrated into automated workflows to enhance marketing strategies, offering a practical way to tailor content and offers to specific customer segments based on product interest.
+This example demonstrates how to create Actions for the [Robocorp Action Server](https://github.com/robocorp/robo/tree/master/action_server/docs#readme) to assist with customer data and marketing campaigns. These Actions can be integrated into automated workflows to enhance marketing strategies, offering a practical way to tailor content and offers to specific customer segments based on product interest.
 
 `Actions` and `Action Server` enable you to "give your AI Agents hands" meaning that your AI/LLM Agent can help your users perform distinct actions that get executed based on the LLM discussion.
 
@@ -28,7 +28,7 @@ When debugging your Actions Python code, you probably do not want to give the in
 
 ## What does the example Action do?
 
-This template demonstrates initiating marketing campaign Actions with a focus on querying exclusive product offers by category. It's designed to showcase the integration of database queries into automated workflows for targeted marketing strategies.
+This example uses a database with predifined queries that the LLM can call with the suitable parameters without creating any actual DB queries.
 
 We leverage SQLite for database interactions, illustrating that the Python ecosystem offers a wide array of libraries and tools for custom Action development. Explore [PyPI](https://pypi.org/) for additional libraries, including those specific to [Robocorp](https://pypi.org/search/?q=robocorp-), to enhance your Actions further.
 
