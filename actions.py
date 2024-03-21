@@ -39,7 +39,6 @@ def get_allowed_queries() -> str:
         detailed_queries = ["Allowed Queries with Details:"]
         for name, sql, description in queries:
             detailed_queries.append(f"Query Name: {name}\nDescription: {description}\n")
-        print("\n".join(detailed_queries))
         return "\n".join(detailed_queries)
     else:
         return "No allowed queries found."
@@ -83,10 +82,9 @@ def execute_allowed_query(execution_params: QueryExecutionParams) -> str:
         "purchases_by_amount_range",
         "customers_by_email_open_rate",
     ]:
-        # Check if the upper limit flag and value are set to 0, None respectively
+        # Check if the upper limit is set to 0
         if len(execution_params.params) >= 4 and execution_params.params[3] == 0:
-            # Set the upper limit flag to 1 and use a very high value to effectively ignore the upper limit
-            execution_params.params[2] = 1
+            # Set the upper limit to a very high value to effectively ignore the upper limit
             execution_params.params[3] = (
                 100000  # Or any other high number that suits your data
             )
